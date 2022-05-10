@@ -1,3 +1,5 @@
+(FIRST TIME ONLY) https://nodejs.org/en/ <- download node.js it is used to run the bot.
+
 To run the bot first have the console up in vscode (Ctrl + ` <- the thing on the top left of the keeb)
 
 Make sure you are on the terminal part of the console
