@@ -1,0 +1,8 @@
+Create index of everything which includes:
+  Cards
+  Skills
+  Maybe helpful stuff like how to do combat in case of forgor
+
+Adding a vs roll system (card vs card)
+
+Having a built in player system that adds all the player's info (name, stats, skils, accessable cards)

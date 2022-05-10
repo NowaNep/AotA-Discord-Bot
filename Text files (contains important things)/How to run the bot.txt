@@ -1,0 +1,12 @@
+To run the bot first have the console up in vscode (Ctrl + ` <- the thing on the top left of the keeb)
+
+Make sure you are on the terminal part of the console
+
+(FIRST TIME ONLY UNLESS WE ADD A PACKAGE INTO THE CODE) Type "npm install" to get all the node modules needed to run the bot
+
+Type "node index.js" to run the bot. if not let me (nep) know
+
+deploy-commands.js is a way to add the commands to the server.
+The config.json i gave you should be the AotA server id
+
+if any questions tell nepnep !
