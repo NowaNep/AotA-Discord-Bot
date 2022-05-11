@@ -1,4 +1,4 @@
-//CardName,Flow,OnPlay/Discard effect/Special Rule,
-//Die 1 Low, Die 1 High, Die 1 Type, 1Proq, 1xProq Effect,
+//Dice,CardName,Flow,OnPlay/Discard effect/Special Rule, (done class)
+//Die 1 Low, Die 1 High, Die 1 Type, 1Proq, 1xProq Effect, (done class)
 //Die 2 Low, Die 2 High, Die 2 Type, 2Proq, 2Proq Effect,
 //Die 1 Low, Die 1 High, Die 3 Type, 3Proq, 3Proq Effect
