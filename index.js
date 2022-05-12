@@ -28,6 +28,11 @@ for (const file of eventFiles) {
 	}
 }
 
+/*
+ code that says "HEY! RUN THIS FUCKERS CODE FILE" 
+*/
+
+// leave this last PLEASE
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 

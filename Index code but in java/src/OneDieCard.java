@@ -70,7 +70,7 @@ public class OneDieCard extends Card {
     if (this.die1Proq == null || this.die1Proq.isEmpty()) {
       return "Card name: " + this.cardName +
         "\nFlow required to use: " + this.flow + 
-        "\n" + this.cardEffects +
+        "\n " + this.cardEffects +
         "\n" + this.die1Low + "-" + this.die1High + " " + this.die1Type;
     } else { //this will be shown if there is a proq 
       return "Card name: " + this.cardName +
