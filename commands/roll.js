@@ -12,13 +12,13 @@ module.exports = {
       option.setName('max')
       .setDescription('The max value')
       .setRequired(true))
-    .addIntegerOption(option => 
-      option.setName('roll')
-      .setDescription('how many times will you roll')
-      .setRequired(false))
     .addIntegerOption(option =>
       option.setName('modify')
       .setDescription('when you need to add/subtract something (AFFECTS ALL DICE)')
+      .setRequired(false))
+    .addIntegerOption(option => 
+      option.setName('roll')
+      .setDescription('how many times will you roll')
       .setRequired(false)),
 	async execute(interaction) {
     //var setup
