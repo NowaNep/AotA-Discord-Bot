@@ -1,5 +1,5 @@
 public class EffectCard extends Card{
-  public EffectCard(int dice, String cardName, int flow, String cardEffects) {
+    public EffectCard(int dice, String cardName, int flow, String cardEffects) {
     super(dice, cardName, flow, cardEffects);
   }
 
