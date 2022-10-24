@@ -6,23 +6,23 @@ module.exports = {
 		.setDescription('Rolls for you, add a min and max! modifiers can be added to it as well')
     .addIntegerOption(option =>
         option.setName('min')
-            .setDescription('The min value')
+            .setDescription('The min value of the die')
             .setRequired(true))
     .addIntegerOption(option =>
         option.setName('max')
-            .setDescription('The max value')
+            .setDescription('The max value of the die')
             .setRequired(true))
     .addIntegerOption(option =>
         option.setName('modify')
-            .setDescription('when you need to add/subtract something (AFFECTS ALL DICE)')
+            .setDescription('When you need to add/subtract all the die/dice')
             .setRequired(false))
     .addIntegerOption(option => 
         option.setName('roll')
-            .setDescription('how many times will you roll')
+            .setDescription('How many times will you roll')
             .setRequired(false))
     .addIntegerOption(option =>
         option.setName('finalmodify')
-            .setDescription('adds/subtract the TOTAL of the rolled die/dice')
+            .setDescription('Adds/subtracts the TOTAL of the rolled die/dice')
             .setRequired(false)),
 	async execute(interaction) {
     //var setup
@@ -34,19 +34,17 @@ module.exports = {
         const rolls = [];
         const modrolls = [];
 
-
-        //checks if the fmodify is there or not
-        if (fmodify){
+        if (fmodify){ //checks if the fmodify is there or not
             totalroll = fmodify; // gives the final roll 
         } else {
             totalroll = 0; // sum roll of all rolled dice if no f modify
-        }
+        };
 
         looproll = 0;  // currently rolled dice in case of loop roll
 
         if (!timesrolled){
             timesrolled = 1;
-        }
+        };
 
         // the random first
         for (i = 0; i < timesrolled; i++) {
@@ -55,11 +53,18 @@ module.exports = {
             rolls.push(looproll);
             if (modify) {
                 looproll += modify;
-            }
+                if (looproll <= 0) {
+                    looproll = 1;
+                };
+            };
             modrolls.push(looproll);
 
             totalroll += looproll;
-        }
+        };
+
+        if (totalroll <= 0){
+            totalroll = 1;
+        };
 
         await interaction.reply("You have rolled a " + totalroll + "!\n" + "Natural rolled dice are " + rolls);
 	},
