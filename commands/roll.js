@@ -21,7 +21,7 @@ module.exports = {
             .setDescription('How many times will you roll')
             .setRequired(false))
     .addIntegerOption(option =>
-        option.setName('finalmodify')
+        option.setName('final_modify')
             .setDescription('Adds/subtracts the TOTAL of the rolled die/dice')
             .setRequired(false)),
 	async execute(interaction) {
@@ -47,7 +47,7 @@ module.exports = {
         };
 
         // the random first
-        for (i = 0; i < timesrolled; i++) {
+        for (let i = 0; i < timesrolled; i++) {
             looproll = Math.floor(Math.random() * (max - min) + min);
 
             rolls.push(looproll);
@@ -66,6 +66,6 @@ module.exports = {
             totalroll = 1;
         };
 
-        await interaction.reply("You have rolled a " + totalroll + "!\n" + "Natural rolled dice are " + rolls);
+        await interaction.reply("You have rolled a " + totalroll + "\n" + "Natural rolled dice are " + rolls);
 	},
 };
