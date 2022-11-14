@@ -30,7 +30,7 @@ module.exports = {
         const max = interaction.options.getInteger('max');
         const modify = interaction.options.getInteger('modify');
         let timesrolled = interaction.options.getInteger('roll');
-        let fmodify = interaction.options.getInteger('finalmodify');
+        let fmodify = interaction.options.getInteger('final_modify');
         const rolls = [];
         const modrolls = [];
 
