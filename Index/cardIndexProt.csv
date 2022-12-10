@@ -1,0 +1,17 @@
+1;Wait up;0;On Use: Restore 5 Int;2;6;Puncture;
+3;Fierce Onsault;11;On Use: Discard a Card and gain +1 Dice Power;2;3;Slash;
+2;Stay Calm;4;On Discard: Draw a Card;1,1;2,3;Slash,Puncture;
+2;Shuffle Hands;11;On Use: Draw a Card;3,2;6,5;Concuss,Concuss;,On Hit: inflict 2 Paralysis
+2;Outburst;7;On Use: Discard a Card and restore 10 Flow;2,2;4,6;
+3;Daring Descision;14;On Use: Discard all cards and gain more Power depending on cards discarded: 1-3 gives +2 Dice Power, 4-6 gives +3 Dice Power, 7+ gives +4 Dice Power;
+2;Flip the Table;4;On Discard: Gain +1 Strength this round;2,1;4,4;Concuss,Concuss;
+
+
+
+
+
+
+
+
+
+3;Cut In;11;On Use: Draw a Page;1,1,1;5,4,6;Slash,Evade,Slash;,On Triumph: Next die gains +2 Dice Power,
