@@ -1,3 +1,38 @@
+
+// test for new index function
+
+/*identifiers
+dice integer or string
+name string
+flow integer
+cardeffect string
+dice high array integer
+dice low array integer
+dice type array string
+dice effect array string
+
+how its made on file
+dice;name;flow;cardeffect;dicelow;dicehigh;dicetype;diceeffect
+
+4 arrays
+2 strings
+2 integers
+*/
+
+class diceprototype{
+    constructor(dice, name, flow, cardeffect = null, dicelow, dicehigh, dicetype, diceeffect){
+        this.dice = dice; // dice in a card
+        this.name = name; // name of the card
+        this.flow = flow; //flow of the card
+        this.cardeffect = cardeffect; // shows the card effect
+        this.dicehigh = dicehigh;
+        this.dicelow = dicelow;
+        this.dicetype = dicetype;
+        this.diceeffect = diceeffect;
+    }
+}
+
+/* old code saved in case of shit happening
 class CardFormat{
     constructor(dice, name, flow, cardeffect = null){
         this.dice = dice;
@@ -141,3 +176,4 @@ class Card7die extends Card6die {
         }
     }
 }
+*/
