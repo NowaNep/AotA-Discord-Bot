@@ -28,7 +28,7 @@ module.exports = {
         };
 
         for (let i = 0; i < timesrolled; i++) {
-            looproll = Math.floor(Math.random() * (max - 1) + 1);
+            looproll = Math.ceil(Math.random() * max);
             totalroll += looproll;
             rolls.push(looproll);
         };

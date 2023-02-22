@@ -9,10 +9,7 @@
   "author": "NowaNep#3311",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^0.11.0",
-    "@discordjs/rest": "^0.2.0-canary.0",
     "cat-facts": "^1.0.2",
-    "discord-api-types": "^0.26.1",
-    "discord.js": "^13.12.0"
+    "discord.js": "^13.13.1"
   }
 }

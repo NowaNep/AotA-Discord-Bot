@@ -48,7 +48,7 @@ module.exports = {
 
         // the random first
         for (let i = 0; i < timesrolled; i++) {
-            looproll = Math.floor(Math.random() * (max - min) + min);
+            looproll = Math.floor(Math.random() * (max - min + 1) + min);
 
             rolls.push(looproll);
             if (modify) {

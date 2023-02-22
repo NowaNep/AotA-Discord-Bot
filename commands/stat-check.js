@@ -14,7 +14,7 @@ module.exports = {
         let roll, totalroll = 0;
 
         // rolls the dice
-        roll = Math.floor(Math.random() * (100-1) + 1);
+        roll = Math.ceil(Math.random() * 100);
 
         //addes the roll with stat
         totalroll = roll + stat;
